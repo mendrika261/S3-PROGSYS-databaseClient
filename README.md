@@ -4,7 +4,7 @@
 
 Download a released version <a href="https://github.com/mendrika261/databaseClient/releases/tag/AlphaTest">here</a> <br>
 <b>Console:</b> `java -jar databaseClient.jar localhost 1234` <br>
-<b>Args:</b> hostname and port of the server (<a href="">Server can be download here</a>)
+<b>Args:</b> hostname and port of the server (<a href="https://github.com/mendrika261/database">Server can be download here</a>)
 
 ## Working query
 
