@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="databaseClient:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/databaseClient_jar</output-path>
+    <root id="archive" name="databaseClient.jar">
+      <element id="module-output" name="databaseClient" />
+    </root>
+  </artifact>
+</component>
