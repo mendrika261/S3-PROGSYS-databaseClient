@@ -13,7 +13,7 @@ Server can be found <a href='https://github.com/mendrika261/database'>here</a>.
 * Whatever Operating System
 
 ### Using the compiled .jar released
-You can download the latest version on <a href='https://github.com/mendrika261/database/releases'>release section</a>.<br>
+You can download the latest version on <a href='https://github.com/mendrika261/databaseClient/releases'>release section</a>.<br>
 **Run:** `java -jar databaseClient.jar [host ipV4] [port]`<br>
 **Args:** The ipv4 and port of the host
 
