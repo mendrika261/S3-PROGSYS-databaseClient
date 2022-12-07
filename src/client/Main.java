@@ -48,12 +48,12 @@ public class Main {
             }
 
         } catch (SocketException | UnknownHostException e) {
-            if(e.getMessage().equals("Connection reset"))
+            if(e.getMessage() !=null && e.getMessage().equals("Connection reset"))
                 System.out.println(Color.YELLOW + "\tLe serveur s'est arrêté, attendez la maintenance" + Color.RESET);
             else
                 System.out.println(Color.YELLOW + "\tLe serveur demandé est indisponible" + Color.RESET);
         } catch (Exception e) {
-            //e.printStackTrace();
+            e.printStackTrace();
             System.out.println(Color.YELLOW + "\tUn erreur s'est produit! Réessayer ulterierement" + Color.RESET);
             System.exit(0);
         } finally {
