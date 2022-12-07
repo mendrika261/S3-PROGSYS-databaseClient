@@ -39,8 +39,8 @@ You can download the latest version on <a href='https://github.com/mendrika261/d
   * `SELECT * FROM table1 JOIN table2 ON id==id ...`
   * `SELECT * FROM table1 UNION table2 ...`
   * `SELECT * FROM table1 INTERSECTS table2 ...`
-  * `SELECT * FROM DIFFERENCE table1 AND table2 ...`
-  * `SELECT * FROM DIVIDE table1 BY table2 ...`
+  * `SELECT * FROM table1 MINUS table2 ...`
+  * `SELECT * FROM table1 DIVIDED_BY table2 ...`
   * Sub-query works by using parentheses
     <br>eg: `SELECT * FROM table1 UNION (SELECT * FROM DIVIDE table2 BY table 3)`
 
