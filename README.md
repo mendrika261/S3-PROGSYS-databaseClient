@@ -26,7 +26,7 @@ You can download the latest version on <a href='https://github.com/mendrika261/d
     We use only `=` on update!
 
 #### Creation
-  * `CREATE TABLE table-name`
+  * `CREATE TABLE table-name`: objects name like "database" are not allowed to be a table name.
   * `INSERT INTO table VALUES val1,val2...`
     <br>Don't forget to `COMMIT` after insertion or `ROLLBACK` if needed.
   >For the moment `COMMIT` in a user session will roll back instantly all others change not commited!
