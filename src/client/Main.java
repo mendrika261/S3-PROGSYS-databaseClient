@@ -7,6 +7,7 @@ import client.exception.InvalidPortException;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.EOFException;
 import java.net.Socket;
 import java.net.SocketException;
 import java.net.UnknownHostException;
@@ -47,13 +48,12 @@ public class Main {
                 System.out.println();
             }
 
-        } catch (SocketException | UnknownHostException e) {
+        } catch (SocketException | UnknownHostException | EOFException e) {
             if(e.getMessage() !=null && e.getMessage().equals("Connection reset"))
                 System.out.println(Color.YELLOW + "\tLe serveur s'est arrêté, attendez la maintenance" + Color.RESET);
             else
                 System.out.println(Color.YELLOW + "\tLe serveur demandé est indisponible" + Color.RESET);
         } catch (Exception e) {
-            e.printStackTrace();
             System.out.println(Color.YELLOW + "\tUn erreur s'est produit! Réessayer ulterierement" + Color.RESET);
             System.exit(0);
         } finally {

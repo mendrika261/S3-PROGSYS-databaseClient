@@ -19,7 +19,7 @@ You can download the latest version on <a href='https://github.com/mendrika261/d
 
 ### Working query
 **Be Aware!** <br>
-- Syntax are case-sensitive
+- Syntax are not case-sensitive
 - Don't use comma or any operators with space
 - No semicolon at the end of a query
 > Available comparison operator are `==`, `!=`, `<=`, `>=`, `<` and `>`.
@@ -29,6 +29,7 @@ You can download the latest version on <a href='https://github.com/mendrika261/d
   * `CREATE TABLE table-name`
   * `INSERT INTO table VALUES val1,val2...`
     <br>Don't forget to `COMMIT` after insertion or `ROLLBACK` if needed.
+  >For the moment `COMMIT` in a user session will roll back instantly all others change not commited!
 
 #### Selection
   * `DESC DATABASE` to view all existing relation
