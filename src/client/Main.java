@@ -38,7 +38,7 @@ public class Main {
 
                 dataOutputStream.writeUTF(query);
                 String serverMessage = dataInputStream.readUTF();
-                if (serverMessage.equals("EXIT")) break;
+                if (serverMessage.equalsIgnoreCase("EXIT")) break;
 
                 System.out.println(serverMessage);
 
