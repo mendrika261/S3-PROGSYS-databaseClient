@@ -36,7 +36,7 @@ public class Main {
 
                 start = System.currentTimeMillis();
 
-                dataOutputStream.writeUTF(query);
+                dataOutputStream.writeUTF(Formatter.removeDuplicatePunctuation(query));
                 String serverMessage = dataInputStream.readUTF();
                 if (serverMessage.equalsIgnoreCase("EXIT")) break;
 
