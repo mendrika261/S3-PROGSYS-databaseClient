@@ -20,20 +20,18 @@ You can download the latest version on <a href='https://github.com/mendrika261/d
 ### Working query
 **Be Aware!** <br>
 - Syntax are not case-sensitive
-- Don't use comma or any operators with space
 - No semicolon at the end of a query
 > Available comparison operator are `==`, `!=`, `<=`, `>=`, `<` and `>`.
-    We use only `=` on update!
+    We use `=` for affectation like on update!
 
 #### Creation
   * `CREATE TABLE table-name`: objects name like "database" are not allowed to be a table name.
   * `INSERT INTO table VALUES val1,val2...`
-    <br>Don't forget to `COMMIT` after insertion or `ROLLBACK` if needed.
-  >For the moment `COMMIT` in a user session will roll back instantly all others change not commited!
+    <br>Don't forget to `COMMIT` after insertion, deletion and update or `ROLLBACK` if needed.
 
 #### Selection
   * `DESC DATABASE` to view all existing relation
-  * `DESC TABLE table-name` to view all field of a relation
+  * `DESC table-name` to view all field of a relation
   * `SELECT * FROM table`
   * `SELECT * FROM table WHERE col==value`
   * `SELECT col1,col2... FROM table ...`
@@ -46,7 +44,7 @@ You can download the latest version on <a href='https://github.com/mendrika261/d
     <br>eg: `SELECT * FROM table1 UNION (SELECT * FROM DIVIDE table2 BY table 3)`
 
 #### Update
-  * `UPDATE table SET col=value WHERE col1=value1`
+  * `UPDATE table SET col=value WHERE col1==value1`
 
 #### Delete
   * `DROP TABLE table-name`
