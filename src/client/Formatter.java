@@ -5,8 +5,8 @@ public class Formatter {
         text = text.replaceAll(" +", " ").replaceAll(", ", ",").replaceAll(" ,", ",");
         text = text.replaceAll("= ", "=").replaceAll(" =", "=");
         text = text.replaceAll(" !", "!");
-        text = text.replaceAll(" <", "<");
-        text = text.replaceAll(" >", ">");
+        text = text.replaceAll(" <", "<").replaceAll("< ", "<");
+        text = text.replaceAll(" >", ">").replaceAll("> ", ">");
         return text;
     }
 }
